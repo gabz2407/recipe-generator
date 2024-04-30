@@ -19,21 +19,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     let prompt = `Generate a recipe about ${input}`;
-    let context = `Accordingly to your knowledge about world foods, generate a healthy recipe like this: 
-    <h1>Recipe Title</h1> 
-    <br /> 
-    <br /> 
-    <h3>Ingredients:</h3>
-    <ul>
-    <li> ingredients list </li>
-    </ul>
-    <br />
-    <br />
-    <h3>Instructions:</h3>
-    <ul>
-    <li>Instructions list </li>
-    </ul>
-    `;
+    let context = `Accordingly to your knowledge about world foods, generate a healthy recipe. Please answer in this format:<h2>Recipe Name</h2><br /> <h4>Ingredients:</h4><ul><li>Ingredients list</li></ul><h4>Instructions:</h4><p></p>`;
     let apiKey = "ad4a76bd16e24537a83abaf57d8dcaa3";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
