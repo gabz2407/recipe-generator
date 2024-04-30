@@ -4,7 +4,10 @@ function App() {
   return (
     <div className="App">
       <header>Recipe Generator</header>
-      {/* form */}
+      <form>
+        <input type="search" placeholder="Search for a recipe" />
+        <input type="submit" value="Search" />
+      </form>
 
       {/* option buttons
       - vegan
