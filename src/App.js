@@ -1,10 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header>Recipe Generator</header>
+      {/* form */}
+
+      {/* option buttons
+      - vegan
+      - vegetarian
+      - carnivore
+      - pescatarian */}
     </div>
   );
 }
